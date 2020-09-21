@@ -44,12 +44,12 @@ function readFile(src) {
         if (err) {
             console.log("Error reading: ", src);
             console.log(err);
-            process.kill(1)
+            return;
+            // process.kill(1)
         } else {
             const urls = makeUrlArray(data)
             for (let url of urls) {
                 let dest = makeFilename(url)
-                console.log(dest);
                 copyHTML(url, dest)
             }
            
@@ -62,19 +62,26 @@ function readFile(src) {
 async function copyHTML(src, dest) {
      try {
         const response = await axios.get(src);
-        fs.writeFile(dest, response.data, (err) => {
+        const html = response.data;
+        if(!(html.includes("!doctype") || html.includes("!DOCTYPE"))) {
+            console.log(`Couldn't download ${src}`);
+            return;
+        } 
+        fs.writeFile(dest, html, (err) => {
             if (err) {
                 console.log("Error copying to: ", dest);
                 console.log(err);
-                process.kill(1)
+                return;
+                // process.kill(1)
             } else {
-                console.log("Successful Copy!");
+                console.log(`Wrote to ${src}`);
             }
         });
     } catch (err) {
         console.log("ERROR with making HTTP request to URL");
         console.log(err);
-        process.exit(1);
+        return;
+        // process.exit(1);
     }
 }
 
