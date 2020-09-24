@@ -2,91 +2,75 @@
 const fs = require("fs")
 const axios = require("axios")
 const process = require("process")
+const lineReader = require('line-reader');
 
 function makeFilename(url){
-    let splitName = url.split(/\/\//);
-    splitName.splice(0, 1);
-    let filename = splitName.join("")
-    if(filename.indexOf(".com") !== -1) {
-        let index = filename.indexOf(".com")
-        let removingTld = filename.split("")
-        removingTld.splice(index + 4, removingTld.length)
-        removingTld.splice(removingTld.length, 0, ".txt")
-        let finalName = removingTld.join("");
-        return finalName;
-    } else if (filename.indexOf(".org") !== -1) {
-        let index = filename.indexOf(".org")
-        let removingTld = filename.split("")
-        removingTld.splice(index + 4, removingTld.length)
-        removingTld.splice(removingTld.length, 0, ".txt")
-        let finalName = removingTld.join("");
-        return finalName;
+    try {
+        let removedHtml;
+        if( url.includes("https") ) {
+            removedHtml = url.substring(8, url.length)
+        } else if ( !url.includes("https") && url.includes("http") ){
+            removedHtml = url.substring(7, url.length)
+        } 
+        let stringify = String(removedHtml)
+        let containsForwardSlash = stringify.indexOf("/")
+        if( containsForwardSlash !== -1) {
+            removedHtml = removedHtml.substring(0, containsForwardSlash)
+        } 
+        return removedHtml;
+    } catch(e) {
+        console.log(`Testing error in makeFilename'`);
+        return;
     }
-}
-
-function makeUrlArray(data){
-    const words = data.split(/http/);
-    words.splice(0, 1);
-    urls = []
-    for (let word of words){
-        let split = word.split("");
-        split.splice(split.length - 1, 2);
-        split.splice(0,0,"http");
-        let joined = split.join("")
-        urls.push(joined)
-        makeFilename(joined)
-    }
-    return urls
 }
 
 function readFile(src) {
-    fs.readFile(src, 'utf8', (err, data) => {
-        if (err) {
-            console.log("Error reading: ", src);
-            console.log(err);
-            return;
-            // process.kill(1)
-        } else {
-            const urls = makeUrlArray(data)
-            for (let url of urls) {
-                let dest = makeFilename(url)
-                copyHTML(url, dest)
+    try {
+        lineReader.eachLine(src, (line) => {
+            let dest = makeFilename(line)
+            copyHTML(line, dest)
+            // stop if line contains `NEW`
+            if(line.includes('NEW')) {
+                return false;
             }
-           
-        }
-    });
+        });
+    } catch(e) {
+        e.message = `Error reading: ${src}`;
+        next(e)
+    }
 }
 
-
-
 async function copyHTML(src, dest) {
-     try {
+    try {
         const response = await axios.get(src);
         const html = response.data;
         if(!(html.includes("!doctype") || html.includes("!DOCTYPE"))) {
-            console.log(`Couldn't download ${src}`);
-            return;
+            throw ("Error")
         } 
         fs.writeFile(dest, html, (err) => {
             if (err) {
                 console.log("Error copying to: ", dest);
                 console.log(err);
                 return;
-                // process.kill(1)
             } else {
-                console.log(`Wrote to ${src}`);
+                console.log(`Wrote to ${dest}`);
             }
         });
     } catch (err) {
-        console.log("ERROR with making HTTP request to URL");
-        console.log(err);
+        if ( !src.includes("https") && !src.includes("http") && src.includes("www") ) {
+            console.log(`ERROR: Could not make HTTP request to URL: ${src}. The URL needs to contain either 'http' or 'https', not just 'www'.`);
+        } else if ( !src.includes("https") && !src.includes("http") && !src.includes("www") ) {
+            console.log(`ERROR: Could not make HTTP request to URL: ${src}. The URL needs to contain either 'http' or 'https'`);
+        } else if (src.includes("https") || !src.includes("http")) {
+            console.log(`ERROR: Could not make HTTP request to URL: ${src}, double check if url is valid.`);
+        } else {
+            console.log(`ERROR: Could not make HTTP request to URL: ${src}, double check if url is valid.`);
+        }
         return;
-        // process.exit(1);
     }
 }
 
 // ==================================== OUTPUT ====================================
-
 
     if (process.argv[2].includes('txt')) {
         readFile(process.argv[2]);

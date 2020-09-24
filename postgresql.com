@@ -9,7 +9,7 @@
  
   <meta name="theme-color" content="#336791"/>
   <meta name="copyright" content="The PostgreSQL Global Development Group" />
-  <link href="/media/css/fontawesome.css?d7d5b105" rel="stylesheet">
+  <link href="/media/css/fontawesome.css?2eb1eb69" rel="stylesheet">
   <link rel="stylesheet" href="/media/css/bootstrap-4.4.1.min.css">
   <link rel="shortcut icon" href="/favicon.ico" />
   
@@ -36,7 +36,7 @@
     
     <link rel="alternate" type="application/rss+xml" title="PostgreSQL Events" href="/events.rss" />
   
-    <link rel="stylesheet" type="text/css" href="/dyncss/base.css?d7d5b105">
+    <link rel="stylesheet" type="text/css" href="/dyncss/base.css?2eb1eb69">
   
   </head>
   <body>
@@ -205,7 +205,7 @@
       <h2>Mailing Lists</h2>
       <div class="text">
         <p>
-          The PostgreSQL <a href="https://lists.postgresql.org" target="_blank">mailing lists</a> enable you to interact with active community participants on subjects related to the development of PostgreSQL, discovering how to use PostgreSQL, or learning about upcoming events and product releases.
+          The PostgreSQL <a href="https://lists.postgresql.org" target="_blank" rel="noopener">mailing lists</a> enable you to interact with active community participants on subjects related to the development of PostgreSQL, discovering how to use PostgreSQL, or learning about upcoming events and product releases.
         </p>
         <p>
           In order to manage your mailing list subscription, you need a <a href="https://www.postgresql.org/account/">PostgreSQL community account</a>. <a href="https://www.postgresql.org/account/">Signing up</a> is easy and gives you direct access to the <a href="https://www.postgresql.org/community/">global PostgreSQL community</a>.
@@ -277,37 +277,37 @@
         <ul class="divided">
           
             <li>
+              <h3><a href="/about/news/2080/">pgagroal 0.9.0</a></h3>
+              <ul class="meta">
+                <li><i class="far fa-clock"></i>&nbsp;2020-09-23 by Red Hat</li>
+              </ul>
+            </li>
+          
+            <li>
+              <h3><a href="/about/news/2079/">ORC Foreign Data Wrapper Update Version 1.1.0 is Released!</a></h3>
+              <ul class="meta">
+                <li><i class="far fa-clock"></i>&nbsp;2020-09-21 by Highgo Software</li>
+              </ul>
+            </li>
+          
+            <li>
+              <h3><a href="/about/news/2075/">Pgpool-II 4.1.4, 4.0.11, 3.7.16, 3.6.23 and 3.5.27 are now officially released.</a></h3>
+              <ul class="meta">
+                <li><i class="far fa-clock"></i>&nbsp;2020-09-21 by Pgpool Global Development Group</li>
+              </ul>
+            </li>
+          
+            <li>
+              <h3><a href="/about/news/2078/">pg_chameleon 2.0.15</a></h3>
+              <ul class="meta">
+                <li><i class="far fa-clock"></i>&nbsp;2020-09-21 by Federico Campoli</li>
+              </ul>
+            </li>
+          
+            <li>
               <h3><a href="/about/news/2076/">Brand New Tool –  dbForge Schema Compare for PostgreSQL on Board</a></h3>
               <ul class="meta">
                 <li><i class="far fa-clock"></i>&nbsp;2020-09-20 by Devart</li>
-              </ul>
-            </li>
-          
-            <li>
-              <h3><a href="/about/news/2073/">pgAdmin 4 v4.26 Released</a></h3>
-              <ul class="meta">
-                <li><i class="far fa-clock"></i>&nbsp;2020-09-18 by pgAdmin Development Team</li>
-              </ul>
-            </li>
-          
-            <li>
-              <h3><a href="/about/news/2072/">PostgreSQL 13 RC 1 Released!</a></h3>
-              <ul class="meta">
-                <li><i class="far fa-clock"></i>&nbsp;2020-09-17 by PostgreSQL Global Development Group</li>
-              </ul>
-            </li>
-          
-            <li>
-              <h3><a href="/about/news/2071/">PL/R 8.4.1 released</a></h3>
-              <ul class="meta">
-                <li><i class="far fa-clock"></i>&nbsp;2020-09-16 by PL/R</li>
-              </ul>
-            </li>
-          
-            <li>
-              <h3><a href="/about/news/2070/">PostgreSQL Prometheus Adapter - Initial Release</a></h3>
-              <ul class="meta">
-                <li><i class="far fa-clock"></i>&nbsp;2020-09-10 by Crunchy Data</li>
               </ul>
             </li>
           
@@ -331,90 +331,90 @@
       
         <div class="col-md-4">
           <div class="text-center">
-            <h3><a href="https://postgr.es/p/4Ud"> Diary of an Engineer: Delivering 45x faster percentiles using Postgres, Citus, &amp; t-digest</a></h3>
+            <h3><a href="https://postgr.es/p/4Uo"> Using Postgres and pgRouting To Explore The Smooth Waves of Yacht Rock</a></h3>
             <ul class="meta">
-              <li><i class="far fa-comments"></i>&nbsp;Nils Dijk</li>
-              <li><i class="far fa-clock"></i>&nbsp;2020-09-19</li>
+              <li><i class="far fa-comments"></i>&nbsp;John Porvaznik</li>
+              <li><i class="far fa-clock"></i>&nbsp;2020-09-23</li>
             </ul>
           </div>
         </div>
       
         <div class="col-md-4">
           <div class="text-center">
-            <h3><a href="https://postgr.es/p/4Ub"> Exploring PL/Python: Turn Postgres Table Data Into a NumPy Array</a></h3>
-            <ul class="meta">
-              <li><i class="far fa-comments"></i>&nbsp;Kat Batuigas</li>
-              <li><i class="far fa-clock"></i>&nbsp;2020-09-18</li>
-            </ul>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="text-center">
-            <h3><a href="https://postgr.es/p/4Ua"> Postgres and the Artificial Intelligence Landscape</a></h3>
+            <h3><a href="https://postgr.es/p/4Un"> Developers in Front</a></h3>
             <ul class="meta">
               <li><i class="far fa-comments"></i>&nbsp;Bruce Momjian</li>
-              <li><i class="far fa-clock"></i>&nbsp;2020-09-18</li>
+              <li><i class="far fa-clock"></i>&nbsp;2020-09-23</li>
             </ul>
           </div>
         </div>
       
         <div class="col-md-4">
           <div class="text-center">
-            <h3><a href="https://postgr.es/p/4U9"> new release of pspg - pager for PostgreSQL, MySQL, MonetDB, PrestoSQL, ...</a></h3>
+            <h3><a href="https://postgr.es/p/4Um"> Debugging PL/pgSQL: GET STACKED DIAGNOSTICS</a></h3>
+            <ul class="meta">
+              <li><i class="far fa-comments"></i>&nbsp;Hans-Juergen Schoenig</li>
+              <li><i class="far fa-clock"></i>&nbsp;2020-09-23</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="text-center">
+            <h3><a href="https://postgr.es/p/4Ul"> compiled dll of Orafce are available</a></h3>
             <ul class="meta">
               <li><i class="far fa-comments"></i>&nbsp;Pavel Stehule</li>
-              <li><i class="far fa-clock"></i>&nbsp;2020-09-18</li>
+              <li><i class="far fa-clock"></i>&nbsp;2020-09-23</li>
             </ul>
           </div>
         </div>
       
         <div class="col-md-4">
           <div class="text-center">
-            <h3><a href="https://postgr.es/p/4U8"> Talking about Citus &amp; Postgres at any scale</a></h3>
+            <h3><a href="https://postgr.es/p/4Uk"> Waiting for PostgreSQL 13 – Support FETCH FIRST WITH TIES</a></h3>
             <ul class="meta">
-              <li><i class="far fa-comments"></i>&nbsp;Marco Slot</li>
-              <li><i class="far fa-clock"></i>&nbsp;2020-09-17</li>
+              <li><i class="far fa-comments"></i>&nbsp;Hubert &#39;depesz&#39; Lubaczewski</li>
+              <li><i class="far fa-clock"></i>&nbsp;2020-09-22</li>
             </ul>
           </div>
         </div>
       
         <div class="col-md-4">
           <div class="text-center">
-            <h3><a href="https://postgr.es/p/4U7"> Why Not to Choose Postgres</a></h3>
+            <h3><a href="https://postgr.es/p/4Ui"> Postgres Data Types in PL/Python</a></h3>
+            <ul class="meta">
+              <li><i class="far fa-comments"></i>&nbsp;Kat Batuigas</li>
+              <li><i class="far fa-clock"></i>&nbsp;2020-09-22</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="text-center">
+            <h3><a href="https://postgr.es/p/4Uj"> Postgres Data Types in PL/Python</a></h3>
+            <ul class="meta">
+              <li><i class="far fa-comments"></i>&nbsp;Kat Batuigas</li>
+              <li><i class="far fa-clock"></i>&nbsp;2020-09-22</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="text-center">
+            <h3><a href="https://postgr.es/p/4Uh"> Using Security Definer to Monitor PostgreSQL 9.6 or Earlier Using Percona Monitoring </a></h3>
+            <ul class="meta">
+              <li><i class="far fa-comments"></i>&nbsp;Avinash Kumar</li>
+              <li><i class="far fa-clock"></i>&nbsp;2020-09-22</li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="text-center">
+            <h3><a href="https://postgr.es/p/4Uf"> The Berkeley 39</a></h3>
             <ul class="meta">
               <li><i class="far fa-comments"></i>&nbsp;Bruce Momjian</li>
-              <li><i class="far fa-clock"></i>&nbsp;2020-09-16</li>
-            </ul>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="text-center">
-            <h3><a href="https://postgr.es/p/4U6"> PostgreSQL 13: LIMIT … WITH TIES</a></h3>
-            <ul class="meta">
-              <li><i class="far fa-comments"></i>&nbsp;Álvaro Herrera</li>
-              <li><i class="far fa-clock"></i>&nbsp;2020-09-16</li>
-            </ul>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="text-center">
-            <h3><a href="https://postgr.es/p/4U5"> HOT updates in PostgreSQL for better performance</a></h3>
-            <ul class="meta">
-              <li><i class="far fa-comments"></i>&nbsp;Laurenz Albe</li>
-              <li><i class="far fa-clock"></i>&nbsp;2020-09-16</li>
-            </ul>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="text-center">
-            <h3><a href="https://postgr.es/p/4U4"> 7 Best Practice Tips for PostgreSQL Bulk Data Loading</a></h3>
-            <ul class="meta">
-              <li><i class="far fa-comments"></i>&nbsp;Sadequl Hussain</li>
-              <li><i class="far fa-clock"></i>&nbsp;2020-09-15</li>
+              <li><i class="far fa-clock"></i>&nbsp;2020-09-21</li>
             </ul>
           </div>
         </div>
@@ -423,7 +423,7 @@
    <!-- END First Row Planet PostgreSQL -->
    <div class="row">
      <div class="col-sm-12">
-       <a href="https://planet.postgresql.org" title="Browse Archives" target="_blank"><button type="button" class="btn btn-center btn-primary">Browse Archives</button></a>
+       <a href="https://planet.postgresql.org" title="Browse Archives" target="_blank" rel="noopener"><button type="button" class="btn btn-center btn-primary">Browse Archives</button></a>
      </div>
    </div>
  </div>
@@ -466,7 +466,7 @@
     <script src="/media/js/jquery-3.4.1.slim.min.js"></script>
     <script src="/media/js/popper-1.16.0.min.js"></script>
     <script src="/media/js/bootstrap-4.4.1.min.js"></script>
-    <script src="/media/js/main.js?d7d5b105"></script>
+    <script src="/media/js/main.js?2eb1eb69"></script>
 
   </body>
 </html>

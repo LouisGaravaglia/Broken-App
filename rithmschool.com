@@ -23,7 +23,7 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-eb41ae8905bdd2b439d03b1628aaa345c177848bb8e6c36ea8c5a56cf03ef757.ico" />
   <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="UX8xHDY9ilPMj9EV092xE2napJA4xjuSMLuhw4m3MpPuUfLS9hihcunvl1KebAgwjAJuXp17MibP/GNY+7+Yvw==" />
+<meta name="csrf-token" content="0sUDJsyAoSzeJ/Aa9npJpK/+Pc8xxWt107nsPULQNe98wQ/4yOlROesXPhpVwHGR0TI+10dmUOfJ6cD0Jyuw1Q==" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -321,6 +321,16 @@ mixpanel.init("5080e5eebdaa906ad44bebec9a917acb");</script><!-- end Mixpanel -->
   </div>
     <div class="row">
         <article class="card col-md-4">
+          <a href="/blog/how-to-get-into-top-coding-bootcamp-rithm-school">
+            <h4>
+              How To Get Into A Top Coding Bootcamp
+            </h4>
+              <time pubdate="" datetime="2020-09-22 19:11:15 UTC"></time>
+            <h5>
+              <small>September 22, 2020</small>
+            </h5>
+</a>        </article>
+        <article class="card col-md-4">
           <a href="/blog/taking-breaks-for-productivity">
             <h4>
               Taking Breaks: Why Being Busy Doesn&#39;t Equal Productivity 
@@ -340,6 +350,8 @@ mixpanel.init("5080e5eebdaa906ad44bebec9a917acb");</script><!-- end Mixpanel -->
               <small>August 11, 2020</small>
             </h5>
 </a>        </article>
+    </div>
+      <div class="row">
         <article class="card col-md-4">
           <a href="/blog/five-topics-to-master-before-learning-react-hooks">
             <h4>
@@ -350,8 +362,6 @@ mixpanel.init("5080e5eebdaa906ad44bebec9a917acb");</script><!-- end Mixpanel -->
               <small>July 28, 2020</small>
             </h5>
 </a>        </article>
-    </div>
-      <div class="row">
         <article class="card col-md-4">
           <a href="/blog/what-you-can-learn-from-learning-a-new-language">
             <h4>
@@ -370,16 +380,6 @@ mixpanel.init("5080e5eebdaa906ad44bebec9a917acb");</script><!-- end Mixpanel -->
               <time pubdate="" datetime="2020-07-08 22:58:21 UTC"></time>
             <h5>
               <small>July 08, 2020</small>
-            </h5>
-</a>        </article>
-        <article class="card col-md-4">
-          <a href="/blog/what-coding-language-you-should-learn-to-get-hired-in-2020">
-            <h4>
-              What Coding Language You Should Learn To Get Hired In 2020
-            </h4>
-              <time pubdate="" datetime="2020-07-02 01:56:44 UTC"></time>
-            <h5>
-              <small>July 02, 2020</small>
             </h5>
 </a>        </article>
     </div>
@@ -462,7 +462,7 @@ window.ChatraSetup = {
         <div class="col-md-3 col-sm-4 text-center">
             <a style="padding:0;" class="footer-logo" href="/">
               <img class="logo" width="120" height="58" alt="rithm school company logo" title="Rithm School Logo" src="/assets/logos/rithm_logo-0bbe0cba0becc168bb1ed46540bd26d6921d9f5194372128512268c203687780.svg" />
-</a>            <span><a class="text-muted faq-url" href="/cdn-cgi/l/email-protection#264f48404966544f524e4b55454e49494a0845494b">info@rithmschool.com</a></span>
+</a>            <span><a class="text-muted faq-url" href="/cdn-cgi/l/email-protection#f990979f96b98b908d91948a9a91969695d79a9694">info@rithmschool.com</a></span>
         </div>
         <div class="col-md-6 col-sm-8">
           <div class="text-center email_signup_heading">
@@ -501,7 +501,7 @@ window.ChatraSetup = {
 <div class="thank_you"></div>
 <div class="container">
   <form id="unlock-form" class="card mfp-hide white-popup-block" >
-<input type="hidden" name="authenticity_token" id="authenticity_token" value="WCiRC/Ssuvzt5d+2Si+EBuvvd/3NrvyMNYcn1/IVXb/nBlLFNImR3ciFmfEHnj0lDje9M2gT9TjKwOVMgB33kw==" />  <div id="modal-email-known" style="display:none;">
+<input type="hidden" name="authenticity_token" id="authenticity_token" value="LEjwd++SN/Z+DWyVgJjKF4yd2Fip5MuMEQYbV5c80c6CTPyp6/vH40s9opUjIvIi8lHbQN9H8B4LVjee8sdU9A==" />  <div id="modal-email-known" style="display:none;">
     <h1 class="text-center">Signed up already? Please enter your email to confirm.</h1>
     <div class="email-errors text-center"></div>
     <hr class="modal--bar">
